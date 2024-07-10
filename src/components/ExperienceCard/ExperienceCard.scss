@@ -1,0 +1,19 @@
+.main {
+  min-width: 350px;
+  max-width: 800px;
+  min-height: 310px;
+  max-height: 520px;
+  width: auto;
+  margin: 10;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}

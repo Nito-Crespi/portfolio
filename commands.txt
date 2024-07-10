@@ -1,0 +1,5 @@
+npx create-react-app [name] --template typescript
+npm install bootstrap
+npm install sass
+npm install @fontsource/montserrat
+npm install
