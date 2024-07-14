@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
 import ExperienceManager from "../../components/ExperienceList";
+import StudiesList from "../../components/StudiesList";
+import CertificationsList from "../../components/CertificationsList";
 
 const Portfolio = () => {
+  const [isSpanish, setSpanish] = useState(true);
+
   return (
     <div className="external d-flex justify-content-center align-items-center min-vh-100">
       {/* <div className="internal bg-primary text-white p-4 rounded shadow-lg"></div> */}
@@ -18,30 +22,39 @@ const Portfolio = () => {
             <h1>Alvaro Crespi Liut</h1>
             <p>
               <span>
-                Full-Stack Developer | Delivering Quality Software Solutions.
+                {isSpanish
+                  ? "Desarrollador Full-Stack | Ofreciendo soluciones de software de calidad."
+                  : "Full-Stack Developer | Delivering Quality Software Solutions."}
               </span>
             </p>
-            {/* <button className="btn btn-success bttn">GitHub</button>
-            <button className="btn btn-primary bttn">LinkedIn</button>
-            <button className="btn btn-secondary bttn">Curriculum</button>
-            <button className="btn btn-danger bttn">Curriculum</button>
-            <button className="btn btn-warning bttn">Curriculum</button>
-            <button className="btn btn-info bttn">Curriculum</button>
-            <button className="btn btn-light bttn">Curriculum</button>
-            <button className="btn btn-dark bttn">Curriculum</button> */}
           </div>
         </div>
         <hr />
         {/*  */}
-        <h3>Experience</h3>
+        <h3>{isSpanish ? "Experiencia" : "Experience"}</h3>
         <ExperienceManager />
         <hr />
         {/*  */}
-        <h3>Projects</h3>
+        <h3>
+          {isSpanish
+            ? "Estudios"
+            : "Studies"}
+        </h3>
+        <StudiesList />
         <hr />
         {/*  */}
-        <h3>Social</h3>
-        <hr />
+        <h3>
+          {isSpanish
+            ? "Certificaciones"
+            : "Certifications"}
+        </h3>
+        <CertificationsList />
+        {/*  */}
+        {/* TODO: Quitar <h3>{isSpanish ? "Proyectos" : "Projects"}</h3> */}
+        {/* TODO: Quitar <hr /> */}
+        {/*  */}
+        {/* TODO: Quitar <h3>Social</h3> */}
+        {/* TODO: Quitar <hr /> */}
         {/*  */}
       </div>
     </div>

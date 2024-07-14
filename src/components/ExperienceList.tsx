@@ -6,7 +6,7 @@ const ExperienceList: React.FC = () => {
     {
       title: "GDP - Gestión Documental para Proveedores EPE",
       description: [
-        "He trabajado en el desarrollo de un incremento de software para el sistema web de EPE (Empresa Provincial de la Energía de Santa Fe).",
+        "He trabajado en el desarrollo de un incremento de software para el sistema web de EPE (Empresa Provincial de la Energía de Santa Fe). ",
         "El objetivo principal era lograr la gestión digital de la documentación relacionada con las compras de suministros realizadas por la empresa.",
       ],
       items: [

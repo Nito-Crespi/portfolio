@@ -1,5 +1,5 @@
 import React from "react";
-import "./ExperienceCard.scss";
+import './ExperienceCard.css';
 
 interface ExperienceCardProps {
   title: string;
@@ -15,7 +15,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   technologies,
 }) => {
   return (
-    <div className="main">
+    <div className="experience-card">
       <div className="title">
         <h6>{title}</h6>
       </div>
