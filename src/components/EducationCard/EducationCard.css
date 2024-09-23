@@ -1,0 +1,24 @@
+.education-card {
+  min-width: 350px;
+  max-width: 800px;
+  min-height: 150px;
+  width: auto;
+  margin: 10;
+
+  .title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    .link {
+      margin-left: 10px; /* Espaciado entre h6 y el enlace */
+      align-self: center; /* Alinea el enlace verticalmente en el centro */
+    }
+
+    h6 {
+      margin: 0;
+    }
+  }
+}

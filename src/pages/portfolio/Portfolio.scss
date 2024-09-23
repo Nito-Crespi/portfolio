@@ -1,0 +1,127 @@
+$color-background: rgb(31, 41, 55);
+$color-text-light: rgb(241, 245, 249);
+$color-text-medium: rgb(203, 213, 225);
+$color-text-dark: rgb(226, 232, 240);
+$color-accent: rgb(16, 185, 129);
+$color-accent-hover: rgb(13, 139, 97);
+$color-text-button: rgb(13, 13, 13);
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.external {
+  background-color: $color-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.internal {
+  background-color: $color-background;
+  max-width: 768px;
+  min-width: 375px;
+  width: 100%;
+
+  .custom-div {
+    position: relative; /* Para que el margen derecho se aplique correctamente */
+  }
+  
+  .change-language {
+    position: absolute;
+    right: 10px; /* Ajusta el margen derecho a 10px */
+  }
+  
+}
+
+.profile_container {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    align-items: center;
+
+    .profile_photo {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.cc {
+  display: flex;
+}
+
+.profile_photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-right: 10px;
+}
+
+.profile_text {
+  flex-direction: column;
+}
+
+.bttn {
+  border-radius: 16px;
+  margin-right: 5px;
+  // color: $color-text-button;
+  // background-color: $color-accent;
+}
+
+// .green_button:hover {
+//   color: $color-text-light;
+//   background-color: $color-accent-hover;
+// }
+
+// .green_button:active {
+//   color: red;
+//   background-color: red;
+// }
+
+h1,
+h3,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  color: $color-text-light;
+}
+
+h3 {
+  color: $color-text-medium;
+  margin-bottom: 10px;
+}
+
+h6 {
+  color: $color-text-dark;
+}
+
+span {
+  color: $color-text-medium;
+}
+
+li {
+  color: $color-text-dark;
+  margin-bottom: 5px;
+}
+
+hr {
+  color: $color-text-dark;
+  border-color: $color-accent;
+}
+
+.hr-gray {
+  border-color: $color-text-medium;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}

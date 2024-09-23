@@ -1,0 +1,53 @@
+.project-card {
+  min-width: 350px;
+  max-width: 800px;
+  min-height: 150px;
+  width: auto;
+  margin: 10;
+
+  .title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    h6 {
+      margin: 0;
+    }
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is treated as a block element */
+    margin-bottom: 10px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Custom styles for carousel indicators */
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li {
+  background-color: #000; /* Set the color you prefer for inactive indicators */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Set the color you prefer for active indicator */
+}
