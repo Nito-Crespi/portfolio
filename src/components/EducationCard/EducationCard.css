@@ -13,8 +13,8 @@
     margin-bottom: 10px;
 
     .link {
-      margin-left: 10px; /* Espaciado entre h6 y el enlace */
-      align-self: center; /* Alinea el enlace verticalmente en el centro */
+      margin-left: 10px;
+      align-self: center;
     }
 
     h6 {

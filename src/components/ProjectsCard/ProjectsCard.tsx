@@ -23,7 +23,6 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
         <h6>{title}</h6>
       </div>
       <div className="description">
-        {/* Carrusel de imágenes pasado por parámetro */}
         <Carousel>
           {images.map((imageSrc, index) => (
             <Carousel.Item key={index}>

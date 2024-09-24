@@ -12,7 +12,6 @@ const Portfolio = () => {
 
   return (
     <div className="external d-flex justify-content-center align-items-center min-vh-100">
-      {/* <div className="internal bg-primary text-white p-4 rounded shadow-lg"></div> */}
       <div className="internal p-4 rounded">
         <div className="custom-div">
         <button onClick={() => setSpanish(!isSpanish)} className="btn btn-primary change-language">
@@ -22,7 +21,7 @@ const Portfolio = () => {
         {/*  */}
         <div className="profile_container">
           <img
-            src="./assets/cv/profile_photo.png"
+            src={`${process.env.PUBLIC_URL}/assets/cv/profile_photo.png`}
             alt="Profile photo"
             className="profile_photo"
           />

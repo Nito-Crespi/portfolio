@@ -26,8 +26,8 @@
   .project-image {
     width: 100%;
     height: auto;
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto;
+    display: block;
     margin-bottom: 10px;
   }
 }
@@ -39,15 +39,14 @@
   height: 2rem;
 }
 
-/* Custom styles for carousel indicators */
 .carousel-indicators {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-indicators li {
-  background-color: #000; /* Set the color you prefer for inactive indicators */
+  background-color: #000;
 }
 
 .carousel-indicators .active {
-  background-color: #fff; /* Set the color you prefer for active indicator */
+  background-color: #fff;
 }
