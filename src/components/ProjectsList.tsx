@@ -36,7 +36,7 @@ const ProjectsList: React.FC = () => {
         "PostgreSQL",
       ],
       imageSrc: [
-        "https://drive.google.com/file/d/1kCsQsy3EYcpf7TFicMaJITx4Z6TLJa-6/view?usp=sharing",
+        `${process.env.PUBLIC_URL}/assets/images/aesf/01.png`,
         "https://drive.google.com/file/d/1VNsRLX62tZk7WSclq_7lTRueA4pkl99N/view?usp=sharing",
         "https://drive.google.com/file/d/197ojGTb6IjDxMUdYbv4Pbu022-xv18it/view?usp=sharing",
         "https://drive.google.com/file/d/1KvStBkhj29RQ26SDzqQfBTo6suwhp0ha/view?usp=sharing",
