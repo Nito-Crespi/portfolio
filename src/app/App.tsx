@@ -1,12 +1,30 @@
-import { useState } from "react";
-import "./App.css";
-import Portfolio from "../pages/portfolio/Portfolio";
+import { useLoadingStore } from '../hook/useLoadingStore';
+import './App.css';
+import Portfolio from '../pages/portfolio/Portfolio';
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
+import { useEffect } from 'react';
 
-const App = () => {
+const App: React.FC = () => {
+  const { isLoading, setLoading } = useLoadingStore();
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false);
+    };
+    window.addEventListener('load', handleLoad);
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, [setLoading]);
+
   return (
-    <body>
-      <Portfolio />
-    </body>
+    <div>
+      {isLoading ? (
+        <LoadingSpinner/>
+      ) : (
+        <Portfolio/>
+      )}
+    </div>
   );
 };
 
