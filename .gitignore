@@ -45,7 +45,6 @@ dist
 
 # Gatsby files
 .cache/
-public
 
 # vuepress build output
 .vuepress/dist
@@ -83,7 +82,6 @@ typings/
 
 # gatsby files
 .cache/
-public
 
 # Ignore all local env files except for example
 *.env.*.local
