@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./SocialButton.css";
 
 interface SocialButtonProps {
   url: string;
@@ -7,12 +8,23 @@ interface SocialButtonProps {
   backgroundColor: string;
 }
 
-const SocialButton: React.FC<SocialButtonProps> = ({ url, name, iconPath, backgroundColor }) => {
+const SocialButton: React.FC<SocialButtonProps> = ({
+  url,
+  name,
+  iconPath,
+  backgroundColor,
+}) => {
   return (
     <a
       href={url}
-      className="btn d-inline-flex align-items-center"
-      style={{ backgroundColor, borderColor: backgroundColor, color: '#fff', marginRight: '5px', marginBottom: '5px' }}
+      className="btn d-inline-flex align-items-center social-button"
+      style={{
+        background: backgroundColor,
+        borderColor: backgroundColor,
+        color: "#fff",
+        marginRight: "5px",
+        marginBottom: "5px",
+      }}
       target="_blank"
       rel="noopener noreferrer"
     >
