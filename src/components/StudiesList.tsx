@@ -1,3 +1,4 @@
+import React from "react";
 import useLanguage from "../hook/useLanguage";
 import EducationCard from "./EducationCard/EducationCard";
 
@@ -27,6 +28,7 @@ const StudiesList: React.FC = () => {
           : "This degree prepares me to lead initiatives in artificial intelligence, data science, and computer " +
             "security, and to integrate interdisciplinary teams in the development of innovative solutions.",
       ],
+      items: []
     },
     // agregar mas experiencias aca:
   ];
@@ -34,11 +36,15 @@ const StudiesList: React.FC = () => {
   return (
     <div>
       {educations.map((Education, index) => (
-        <EducationCard
-          key={index}
-          title={Education.title}
-          description={Education.description}
-        />
+        <React.Fragment key={index}>
+          <EducationCard
+            key={index}
+            title={Education.title}
+            description={Education.description}
+            items={Education.items}
+          />
+          {index < educations.length - 1 && <hr className="hr-gray" />}
+        </React.Fragment>
       ))}
     </div>
   );

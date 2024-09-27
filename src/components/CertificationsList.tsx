@@ -31,7 +31,7 @@ const CertificationsList: React.FC = () => {
     {
       title: isSpanish
         ? "2023 | Programa De Lenguas Extranjeras – Inglés | Universidad Nacional de Córdoba"
-        : "Foreign Language Program – English | National University of Cordoba",
+        : "2023 | Foreign Language Program – English | National University of Cordoba",
       description: [
         isSpanish
           ? "Este curso me ha permitido fortalecer mis habilidades en el idioma inglés, abarcando aspectos clave como la gramática, la comprensión auditiva, la expresión oral y escrita. "
@@ -85,11 +85,12 @@ const CertificationsList: React.FC = () => {
           <EducationCard
             title={Education.title}
             description={Education.description}
+            //items={Education.items} // TODO Remove this
             certificate={Education.certificate}
             certificateLink={Education.certificateLink}
           />
           {index < educations.length - 1 && <hr className="hr-gray" />}
-        </React.Fragment>
+          </React.Fragment>
       ))}
     </div>
   );

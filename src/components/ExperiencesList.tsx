@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import useLanguage from "../hook/useLanguage";
+import React from "react";
 
 const ExperiencesList: React.FC = () => {
   const { isSpanish, setSpanish } = useLanguage();
@@ -49,6 +50,7 @@ const ExperiencesList: React.FC = () => {
   return (
     <div>
       {experiences.map((experience, index) => (
+        <React.Fragment key={index}>
         <ExperienceCard
           key={index}
           title={experience.title}
@@ -56,6 +58,8 @@ const ExperiencesList: React.FC = () => {
           items={experience.items}
           technologies={experience.technologies}
         />
+        {index < experiences.length - 1 && <hr className="hr-gray" />}
+          </React.Fragment>
       ))}
     </div>
   );
