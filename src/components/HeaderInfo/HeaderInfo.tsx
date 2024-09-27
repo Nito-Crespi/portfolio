@@ -5,7 +5,7 @@ import SocialButton from "../SocialButton/SocialButton";
 const HeaderInfo: React.FC = () => {
   const { isSpanish, setSpanish } = useLanguage();
 
-  return (  // Añade 'return' aquí
+  return (
     <div className="profile_container">
       <img
         src={`${process.env.PUBLIC_URL}/assets/cv/profile_photo.png`}
