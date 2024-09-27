@@ -4,6 +4,7 @@
   min-height: 150px;
   width: auto;
   margin: 10;
+  margin-bottom: 14px;
 
   .title {
     display: flex;
@@ -20,5 +21,10 @@
     h6 {
       margin: 0;
     }
+  }
+
+  .icon {
+    height: 40px;
+    margin-left: 3px;
   }
 }

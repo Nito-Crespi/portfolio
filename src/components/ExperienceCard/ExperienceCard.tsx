@@ -5,7 +5,7 @@ interface ExperienceCardProps {
   title: string;
   description: string[];
   items: string[];
-  technologies: string[];
+  technologies?: string[];
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -22,7 +22,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <div className="description">
         <p>
           {description.map((text, index) => (
-            <span key={index}>{text}</span>
+            <React.Fragment key={index}>{text}</React.Fragment>
           ))}
         </p>
       </div>
@@ -31,21 +31,25 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           <li key={index}>{item}</li>
         ))}
       </ul>
-      <div className="icons">
-        {technologies.map((tech, index) => (
-          <img
-            key={index}
-            src={`${
-              process.env.PUBLIC_URL
-            }/assets/icons/technologies/${tech.toLowerCase()}.svg`}
-            alt={tech}
-            className="icon"
-          />
-        ))}
-      </div>
-      <div className="technologies-names">
-        <span>[{technologies.map((tech) => tech).join(", ")}]</span>
-      </div>
+      {technologies && technologies.length > 0 && (
+        <div className="icons">
+          {technologies.map((tech, index) => (
+            <img
+              key={tech}
+              src={`${process.env.PUBLIC_URL}/assets/icons/technologies/${tech.toLowerCase()}.svg`}
+              alt={tech}
+              className="icon"
+              role="img"
+              aria-label={tech}
+            />
+          ))}
+        </div>
+      )}
+      {technologies && technologies.length > 0 && (
+        <div className="technologies-names">
+          <span>[{technologies.join(", ")}]</span>
+        </div>
+      )}
     </div>
   );
 };

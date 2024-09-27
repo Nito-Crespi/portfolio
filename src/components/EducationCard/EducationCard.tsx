@@ -4,6 +4,7 @@ import "./EducationCard.css";
 interface EducationCardProps {
   title: string;
   description: string[];
+  items?: string[];
   certificate?: string;
   certificateLink?: string;
 }
@@ -11,6 +12,7 @@ interface EducationCardProps {
 const EducationCard: React.FC<EducationCardProps> = ({
   title,
   description,
+  items,
   certificate,
   certificateLink,
 }) => {
@@ -39,6 +41,13 @@ const EducationCard: React.FC<EducationCardProps> = ({
           ))}
         </p>
       </div>
+      {items && (
+        <ul>
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
