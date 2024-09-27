@@ -35,7 +35,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         {technologies.map((tech, index) => (
           <img
             key={index}
-            src={`${process.env.PUBLIC_URL}/assets/icons/${tech.toLowerCase()}.svg`}
+            src={`${
+              process.env.PUBLIC_URL
+            }/assets/icons/technologies/${tech.toLowerCase()}.svg`}
             alt={tech}
             className="icon"
           />

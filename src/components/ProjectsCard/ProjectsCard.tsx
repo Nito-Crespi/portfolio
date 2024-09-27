@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import './ProjectsCard.css';
+import "./ProjectsCard.css";
 
 interface ProjectsCardProps {
   title: string;
@@ -52,7 +52,9 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
         {technologies.map((tech, index) => (
           <img
             key={index}
-            src={`${process.env.PUBLIC_URL}/assets/icons/${tech.toLowerCase()}.svg`}
+            src={`${
+              process.env.PUBLIC_URL
+            }/assets/icons/technologies/${tech.toLowerCase()}.svg`}
             alt={tech}
             className="icon"
           />

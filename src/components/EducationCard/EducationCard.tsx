@@ -19,7 +19,12 @@ const EducationCard: React.FC<EducationCardProps> = ({
       <div className="title">
         <h6>{title}</h6>
         {!!certificate && !!certificateLink && (
-          <a href={certificateLink} target="_blank" rel="noopener noreferrer" className="link">
+          <a
+            href={certificateLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
             {certificate}
           </a>
         )}
