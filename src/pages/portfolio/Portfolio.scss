@@ -1,10 +1,14 @@
-$color-background: rgb(31, 41, 55);
-$color-text-light: rgb(241, 245, 249);
-$color-text-medium: rgb(203, 213, 225);
-$color-text-dark: rgb(226, 232, 240);
-$color-accent: rgb(16, 185, 129);
-$color-accent-hover: rgb(13, 139, 97);
+// $color-background: rgb(31, 41, 55);
+$color-background: #23272E;
+
+// $color-accent: rgb(16, 185, 129);
+// $color-accent: #22EE11;
+$color-accent: #2196f3;
+
 $color-text-button: rgb(13, 13, 13);
+
+$text-color-primary: #EEEEEE;
+$header-color-primary: #9CC3FF; // #00DDFF;
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
 
@@ -35,18 +39,17 @@ body {
   .custom-div {
     position: relative;
   }
-  
+
   .change-language {
     position: absolute;
     right: 10px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 730px) {
     .custom-div {
       margin-bottom: 50px;
     }
   }
-  
 }
 
 .profile_container {
@@ -61,11 +64,6 @@ body {
       margin: 0 0 10px 0;
     }
   }
-
-}
-
-.cc {
-  display: flex;
 }
 
 .profile_photo {
@@ -81,46 +79,47 @@ body {
   flex-direction: column;
 }
 
-.bttn {
-  border-radius: 16px;
-  margin-right: 5px;
-}
-
 h1,
+h2,
 h3,
+h4,
+h5,
 h6 {
   font-weight: bold;
-}
-
-h1 {
-  color: $color-text-light;
-}
-
-h3 {
-  color: $color-text-medium;
   margin-bottom: 10px;
+  color: $header-color-primary;
 }
 
 h6 {
-  color: $color-text-dark;
+  color: #B4D8FE;
 }
 
-span {
-  color: $color-text-medium;
+a[href] {
+  color: #32C8FF;
+}
+
+a[href]:hover {
+  color: #0AA0D7;
+}
+
+// h1, h2, h3, h4, h5, h6,
+span,
+p,
+ul,
+li {
+  color: $text-color-primary;
 }
 
 li {
-  color: $color-text-dark;
   margin-bottom: 5px;
 }
 
 hr {
-  color: $color-text-dark;
   border-color: $color-accent;
 }
 
 .hr-gray {
-  border-color: $color-text-medium;
+  border-color: $text-color-primary;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 10px;
