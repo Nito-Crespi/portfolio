@@ -1,10 +1,11 @@
-@import '@fontsource/montserrat'; 
+/* @import '@fontsource/montserrat'; 
 
 body {
   font-family: 'Montserrat', sans-serif;
   scrollbar-gutter: stable both-edges;
+  color: blue;
 }
 
 div {
   scrollbar-gutter: stable both-edges;
-}
+} */
