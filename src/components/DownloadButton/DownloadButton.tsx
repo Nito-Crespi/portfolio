@@ -1,4 +1,5 @@
 import React from "react";
+import "./DownloadButton.css"; // Asegúrate de que la ruta sea correcta
 
 interface DownloadButtonProps {
   name: string;
@@ -23,7 +24,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({
   return (
     <button
       onClick={handleDownload}
-      className="btn d-inline-flex align-items-center"
+      className="btn d-inline-flex align-items-center download-button" // Añadido download-button
       style={{
         background: "#28a745",
         borderColor: "#28a745",

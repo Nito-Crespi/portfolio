@@ -1,0 +1,7 @@
+.download-button {
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  filter: brightness(110%);
+}
