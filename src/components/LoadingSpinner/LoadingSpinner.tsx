@@ -1,6 +1,6 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './LoadingSpinner.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./LoadingSpinner.css";
 
 const LoadingSpinner: React.FC = () => {
   return (
