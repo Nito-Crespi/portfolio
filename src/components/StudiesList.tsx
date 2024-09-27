@@ -3,7 +3,7 @@ import EducationCard from "./EducationCard/EducationCard";
 
 const StudiesList: React.FC = () => {
   const { isSpanish, setSpanish } = useLanguage();
-  const Educations = [
+  const educations = [
     {
       title: isSpanish
         ? "2020 - Actualidad | Ingeniería en Sistemas de Información | UTN FRSF"
@@ -33,7 +33,7 @@ const StudiesList: React.FC = () => {
 
   return (
     <div>
-      {Educations.map((Education, index) => (
+      {educations.map((Education, index) => (
         <EducationCard
           key={index}
           title={Education.title}

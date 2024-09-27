@@ -4,7 +4,7 @@ import useLanguage from "../hook/useLanguage";
 
 const PresentationsList: React.FC = () => {
   const { isSpanish, setSpanish } = useLanguage();
-  const experiences = [
+  const presentation = [
     {
       description: [
         isSpanish
@@ -33,7 +33,7 @@ const PresentationsList: React.FC = () => {
 
   return (
     <div>
-      {experiences.map((experience, index) => (
+      {presentation.map((experience, index) => (
         <PresentationCard key={index} description={experience.description} />
       ))}
     </div>

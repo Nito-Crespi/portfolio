@@ -7,8 +7,8 @@ const ExperiencesList: React.FC = () => {
   const experiences = [
     {
       title: isSpanish
-        ? "GDP - Gestión Documental para Proveedores - EPE"
-        : "GDP - Document Management for Suppliers - EPE",
+        ? "2023 - Actualidad | GDP - Gestión Documental para Proveedores - EPE"
+        : "2023 - Current | GDP - Document Management for Suppliers - EPE",
       description: [
         isSpanish
           ? "He trabajado en el desarrollo de un incremento de software para el sistema web de EPE (Empresa Provincial de la Energía de Santa Fe). "
@@ -34,9 +34,10 @@ const ExperiencesList: React.FC = () => {
       technologies: [
         "HTML",
         "CSS",
-        "JS",
-        "TS",
+        "JavaScript",
+        "TypeScript",
         "Vue",
+        "Express",
         "Node",
         "MySQL",
         "Oracle",

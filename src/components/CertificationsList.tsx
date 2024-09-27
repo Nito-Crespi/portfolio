@@ -4,9 +4,9 @@ import useLanguage from "../hook/useLanguage";
 
 const CertificationsList: React.FC = () => {
   const { isSpanish, setSpanish } = useLanguage();
-  const Educations = [
+  const educations = [
     {
-      title: "2024 | ONE - ORACLE NEXT EDUCATION | Alura Latam",
+      title: "2023 - 2024 | ONE - ORACLE NEXT EDUCATION | Alura Latam",
       description: [
         isSpanish
           ? "En este programa completé formaciones en desarrollo de software, iniciando con JavaScript, HTML5 y CSS3, y el uso de Git/GitHub para control de versiones. "
@@ -41,7 +41,7 @@ const CertificationsList: React.FC = () => {
           ? "La formación recibida ha sido fundamental para mejorar mi competencia en el idioma y aplicarla en contextos profesionales y académicos."
           : "The training I received has been essential in improving my proficiency in the language and applying it in professional and academic contexts.",
       ],
-      certificate: "[Cert.]",
+      certificate: isSpanish ? "[Certificado]" : "[Certificate]",
       certificateLink:
         "https://drive.google.com/file/d/1Ywb2CJGK_nbOM6hsdFCvajGaIJjzggzk/view?usp=sharing",
     },
@@ -52,7 +52,7 @@ const CertificationsList: React.FC = () => {
       description: [
         isSpanish
           ? "En este programa, aprendí Java +11 y MySQL, lo que me ha proporcionado una sólida base en desarrollo de aplicaciones y gestión de bases de datos. "
-          : "With this program, I learned Java 8 and MySQL, which provided me with a solid foundation in application development and database management. ",
+          : "With this program, I learned Java +11 and MySQL, which provided me with a solid foundation in application development and database management. ",
         isSpanish
           ? "Estos conocimientos han fortalecido mis habilidades en programación orientada a objetos y manejo de datos. "
           : "These skills have strengthened my abilities in object-oriented programming and data management.",
@@ -80,7 +80,7 @@ const CertificationsList: React.FC = () => {
 
   return (
     <div>
-      {Educations.map((Education, index) => (
+      {educations.map((Education, index) => (
         <React.Fragment key={index}>
           <EducationCard
             title={Education.title}
@@ -88,7 +88,7 @@ const CertificationsList: React.FC = () => {
             certificate={Education.certificate}
             certificateLink={Education.certificateLink}
           />
-          {index < Educations.length - 1 && <hr className="hr-gray" />}
+          {index < educations.length - 1 && <hr className="hr-gray" />}
         </React.Fragment>
       ))}
     </div>
