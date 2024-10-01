@@ -7,7 +7,7 @@ interface PresentationCardProps {
 
 const PresentationCard: React.FC<PresentationCardProps> = ({ description }) => {
   return (
-    <div className="Presentation-card">
+    <div className="presentation-card">
       <div className="description">
         <p>
           {description.map((text, index) => (
