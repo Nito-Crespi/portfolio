@@ -1,7 +1,6 @@
 .presentation-card {
   min-width: 350px;
   max-width: 800px;
-  min-height: 310px;
   width: auto;
 
   .title {
