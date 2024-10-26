@@ -28,7 +28,7 @@ const StudiesList: React.FC = () => {
           : "This degree prepares me to lead initiatives in artificial intelligence, data science, and computer " +
             "security, and to integrate interdisciplinary teams in the development of innovative solutions.",
       ],
-      items: []
+      items: [],
     },
     // agregar mas experiencias aca:
   ];

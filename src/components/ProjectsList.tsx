@@ -10,17 +10,17 @@ const ProjectsList: React.FC = () => {
       title: isSpanish ? "AutoEscuela Santa Fe" : "Driving School Santa Fe",
       description: [
         isSpanish
-          ? "Proporciona una solución integral diseñada para gestionar de manera eficiente una autoescuela. El sistema organiza el "
-          + "calendario de clases filtrando por instructores y permite el seguimiento detallado de cada alumno, incluyendo "
-          + "historial de pagos y cursos tomados. Además, maneja la administración financiera, incluyendo ingresos, egresos "
-          + "y control de caja chica, proporcionando reportes detallados en PDF. AESF Manager permite gestionar usuarios con "
-          + "distintos privilegios, asignar instructores a vehículos y administrar cursos. También ofrece almacenamiento en la "
-          + "nube y un sistema de notificaciones personalizable."
-          : "Provide a comprehensive solution designed to efficiently manage a driving school. The system organizes the class calendar "
-          + "by filtering by instructors and allows detailed tracking of each student, including payment history and courses taken. "
-          + "Additionally, it handles financial administration, including income, expenses, and petty cash control, providing detailed "
-          + "reports in PDF format. AESF Manager allows managing users with different privileges, assigning instructors to vehicles, and "
-          + "administering courses. It also offers cloud storage and a customizable notification system.",
+          ? "Proporciona una solución integral diseñada para gestionar de manera eficiente una autoescuela. El sistema organiza el " +
+            "calendario de clases filtrando por instructores y permite el seguimiento detallado de cada alumno, incluyendo " +
+            "historial de pagos y cursos tomados. Además, maneja la administración financiera, incluyendo ingresos, egresos " +
+            "y control de caja chica, proporcionando reportes detallados en PDF. AESF Manager permite gestionar usuarios con " +
+            "distintos privilegios, asignar instructores a vehículos y administrar cursos. También ofrece almacenamiento en la " +
+            "nube y un sistema de notificaciones personalizable."
+          : "Provide a comprehensive solution designed to efficiently manage a driving school. The system organizes the class calendar " +
+            "by filtering by instructors and allows detailed tracking of each student, including payment history and courses taken. " +
+            "Additionally, it handles financial administration, including income, expenses, and petty cash control, providing detailed " +
+            "reports in PDF format. AESF Manager allows managing users with different privileges, assigning instructors to vehicles, and " +
+            "administering courses. It also offers cloud storage and a customizable notification system.",
       ],
       items: [
         isSpanish
@@ -42,13 +42,15 @@ const ProjectsList: React.FC = () => {
       technologies: [
         "HTML",
         "CSS",
-        "Java",
         "Bootstrap",
+        "Java",
         "Spring",
         "Maven",
+        "JUnit",
+        "Mockito",
         "PostgreSQL",
-        "Docker",
         "Supabase",
+        "Docker",
       ],
       imageSrc: [
         `${process.env.PUBLIC_URL}/assets/images/aesf/01.png`,
@@ -72,11 +74,11 @@ const ProjectsList: React.FC = () => {
             "detallado de los becarios, contabilizando y monetizando las horas trabajadas. También maneja las finanzas del " +
             "centro, incluyendo ventas de menús estudiantiles, generando reportes de ventas en PDF por rangos de fechas. " +
             "Gestion CEUT cuenta con un sistema de control de stock y una base de datos de estudiantes."
-          : "It is a management tool developed for the Student Center of the National Technological University, Santa Fe Regional "
-          + "Faculty (UTN FRSF). The system manages the inventory of the center's locker, facilitating the borrowing and returning "
-          + "of materials and books, library-style. Additionally, it provides detailed tracking of scholarship holders, accounting "
-          + "for and monetizing the hours worked. It also manages the center's finances, including sales of student menus, generating "
-          + "sales reports in PDF format by date ranges. Management TUSC has an inventory control system and a centralized student database.",
+          : "It is a management tool developed for the Student Center of the National Technological University, Santa Fe Regional " +
+            "Faculty (UTN FRSF). The system manages the inventory of the center's locker, facilitating the borrowing and returning " +
+            "of materials and books, library-style. Additionally, it provides detailed tracking of scholarship holders, accounting " +
+            "for and monetizing the hours worked. It also manages the center's finances, including sales of student menus, generating " +
+            "sales reports in PDF format by date ranges. Management TUSC has an inventory control system and a centralized student database.",
       ],
       items: [
         isSpanish
@@ -95,13 +97,7 @@ const ProjectsList: React.FC = () => {
           ? "Base de datos centralizada: Mantiene un registro detallado de estudiantes, becarios y transacciones relacionadas con el centro."
           : "Centralized Database: Maintains a detailed record of students, scholarship holders, and transactions related to the center.",
       ],
-      technologies: [
-        "Java",
-        "JavaFX",
-        "Spring",
-        "Maven",
-        "MySQL"
-      ],
+      technologies: ["Java", "JavaFX", "Spring", "Maven", "MySQL"],
       imageSrc: [
         `${process.env.PUBLIC_URL}/assets/images/ceut/01.png`,
         `${process.env.PUBLIC_URL}/assets/images/ceut/02.png`,

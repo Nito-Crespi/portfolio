@@ -8,8 +8,8 @@ const ExperiencesList: React.FC = () => {
   const experiences = [
     {
       title: isSpanish
-        ? "2023 - Actualidad | GDP - Gestión Documental para Proveedores - EPE"
-        : "2023 - Current | GDP - Document Management for Suppliers - EPE",
+        ? "2023 - Actualidad | Gestión Documental para Proveedores - EPE"
+        : "2023 - Current | Document Management for Suppliers - EPE",
       description: [
         isSpanish
           ? "He trabajado en el desarrollo de un incremento de software para el sistema web de EPE (Empresa Provincial de la Energía de Santa Fe). "
@@ -51,15 +51,15 @@ const ExperiencesList: React.FC = () => {
     <div>
       {experiences.map((experience, index) => (
         <React.Fragment key={index}>
-        <ExperienceCard
-          key={index}
-          title={experience.title}
-          description={experience.description}
-          items={experience.items}
-          technologies={experience.technologies}
-        />
-        {index < experiences.length - 1 && <hr className="hr-gray" />}
-          </React.Fragment>
+          <ExperienceCard
+            key={index}
+            title={experience.title}
+            description={experience.description}
+            items={experience.items}
+            technologies={experience.technologies}
+          />
+          {index < experiences.length - 1 && <hr className="hr-gray" />}
+        </React.Fragment>
       ))}
     </div>
   );

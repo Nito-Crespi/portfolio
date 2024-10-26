@@ -1,0 +1,64 @@
+.header-items {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(35, 39, 46, 10);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  /* padding: 10px 20px; */
+  width: 100%;
+  display: flex;
+  min-height: 30px;
+  justify-content: center; /* Centrar horizontalmente el header-nav */
+  align-items: center;
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    /* max-height: 20px; */
+    /* gap: 20px; */
+    padding-top: 15px;
+    overflow-x: auto; /* Habilitar scroll horizontal */
+
+    .header-item {
+      cursor: pointer;
+      color: var(--text-color-primary);
+      transition: color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .lg {
+      color: var(--color-accent);
+    }
+
+    .header-item:hover {
+      color: #ffffff; /* Color un poco más brillante */
+      text-shadow: 2px 2px 4px rgba(33, 150, 243, 0.6); /* Sombra en el texto */
+    }
+
+    .lg:hover {
+      color: #64b5f6;
+      text-shadow: 2px 2px 4px rgba(33, 150, 243, 0.6); /* Sombra en el texto */
+    }
+  }
+
+  /* Responsividad */
+  @media (max-width: 770px) {
+    .header-nav {
+      overflow-x: auto; /* Asegúrate de que el scroll se aplique */
+      white-space: nowrap; /* Evita que los elementos se envuelvan */
+      justify-content: left;
+      
+      width: 100%;
+    }
+
+    .header-item {
+      /* min-width: 100px; Establece un ancho mínimo para los elementos */
+      text-align: center; /* Centra el texto dentro de cada item */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

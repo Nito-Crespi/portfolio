@@ -1,14 +1,10 @@
-// $color-background: rgb(31, 41, 55);
-$color-background: #23272E;
-
-// $color-accent: rgb(16, 185, 129);
-// $color-accent: #22EE11;
-$color-accent: #2196f3;
-
-$color-text-button: rgb(13, 13, 13);
-
-$text-color-primary: #EEEEEE;
-$header-color-primary: #9CC3FF; // #00DDFF;
+:root {
+  --color-background: #23272e;
+  --color-accent: #2196f3;
+  --color-text-button: rgb(13, 13, 13);
+  --text-color-primary: #eeeeee;
+  --header-color-primary: #9cc3ff;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
 
@@ -17,52 +13,51 @@ body {
 }
 
 .external {
-  background-color: $color-background;
+  background-color: var(--color-background);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 10px;
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
+  .external {
     padding-top: 0px;
     margin-top: 0px;
   }
 }
 
 .internal {
-  background-color: $color-background;
+  background-color: var(--color-background);
   max-width: 768px;
   min-width: 375px;
   width: 100%;
+}
 
-  .custom-div {
-    position: relative;
-  }
+.internal .custom-div {
+  position: relative;
+}
 
-  .change-language {
-    position: absolute;
-    right: 10px;
-  }
-
-  @media (max-width: 730px) {
-    .custom-div {
-      margin-bottom: 50px;
-    }
+@media (max-width: 730px) {
+  .internal .custom-div {
+    margin-bottom: 50px;
   }
 }
 
 .profile_container {
   display: flex;
   align-items: center;
+}
 
-  @media (max-width: 620px) {
+@media (max-width: 620px) {
+  .profile_container {
     flex-direction: column;
     align-items: center;
+  }
 
-    .profile_photo {
-      margin: 0 0 10px 0;
-    }
+  .profile_container .profile_photo {
+    margin: 0 0 10px 0;
   }
 }
 
@@ -87,27 +82,26 @@ h5,
 h6 {
   font-weight: bold;
   margin-bottom: 10px;
-  color: $header-color-primary;
+  color: var(--header-color-primary);
 }
 
 h6 {
-  color: #B4D8FE;
+  color: #b4d8fe;
 }
 
 a[href] {
-  color: #32C8FF;
+  color: #32c8ff;
 }
 
 a[href]:hover {
-  color: #0AA0D7;
+  color: #0aa0d7;
 }
 
-// h1, h2, h3, h4, h5, h6,
 span,
 p,
 ul,
 li {
-  color: $text-color-primary;
+  color: var(--text-color-primary);
 }
 
 li {
@@ -115,11 +109,11 @@ li {
 }
 
 hr {
-  border-color: $color-accent;
+  border-color: var(--color-accent);
 }
 
 .hr-gray {
-  border-color: $text-color-primary;
+  border-color: var(--text-color-primary);
   width: 50%;
   margin: 0 auto;
   margin-bottom: 10px;

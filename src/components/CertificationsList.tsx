@@ -90,7 +90,7 @@ const CertificationsList: React.FC = () => {
             certificateLink={Education.certificateLink}
           />
           {index < educations.length - 1 && <hr className="hr-gray" />}
-          </React.Fragment>
+        </React.Fragment>
       ))}
     </div>
   );
