@@ -66,6 +66,7 @@ dist
 
 # Dependency directories
 node_modules/
+node_modules/
 
 # TypeScript v1 declaration files
 typings/
@@ -81,6 +82,7 @@ typings/
 .env.production.local
 
 # gatsby files
+.cache/
 .cache/
 
 # Ignore all local env files except for example
