@@ -36,11 +36,13 @@
     .header-item:hover {
       color: #ffffff; /* Color un poco más brillante */
       text-shadow: 2px 2px 4px rgba(33, 150, 243, 0.6); /* Sombra en el texto */
+      text-decoration: underline;
     }
 
     .lg:hover {
       color: #64b5f6;
       text-shadow: 2px 2px 4px rgba(33, 150, 243, 0.6); /* Sombra en el texto */
+      text-decoration: underline;
     }
   }
 
